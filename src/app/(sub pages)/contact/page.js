@@ -24,8 +24,8 @@ export default function Contact() {
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
           I am always eager to connect with fellow professionals, potential collaborators, and anyone interested in leveraging technology to make a difference.
-          Let's create something amazing together—feel free to reach out to 
-          discuss opportunities, share ideas, or simply to say hello!
+            Let&apos;s create something amazing together—feel free to reach out to 
+            discuss opportunities, share ideas, or simply to say hello!
           </p>
         </div>
         <Form />

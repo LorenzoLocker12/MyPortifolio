@@ -15,7 +15,7 @@ const AboutDetails = () => {
             Software Engineer
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-          I am currently in the 6th semester of my Bachelor's degree in Computer Science. I have hands-on experience in developing Android applications using native Java, as well as creating dynamic and responsive websites with technologies such as React, Express, Next.js, and SpringBoot. My primary programming languages include Java, JavaScript, C#, and Python, which I utilize to build efficient and scalable software solutions. Additionally, I am proficient in working with databases like MongoDB and PostgreSQL, and I have experience using AWS and Docker for cloud computing and containerization. I am passionate about continuously learning and applying new technologies to solve real-world problems.
+          I am currently in the 6th semester of my Bachelor&apos;s degree in Computer Science. I have hands-on experience in developing Android applications using native Java, as well as creating dynamic and responsive websites with technologies such as React, Express, Next.js, and SpringBoot. My primary programming languages include Java, JavaScript, C#, and Python, which I utilize to build efficient and scalable software solutions. Additionally, I am proficient in working with databases like MongoDB and PostgreSQL, and I have experience using AWS and Docker for cloud computing and containerization. I am passionate about continuously learning and applying new technologies to solve real-world problems.
           </p>
         </ItemLayout>
 
