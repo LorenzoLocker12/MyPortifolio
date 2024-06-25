@@ -21,21 +21,18 @@ export const projectsData = [
     id: 1,
     name: "Lixixo App",
     description: "Mobile app for recycling awareness",
-    date: "08-12-2023",
     demoLink: "https://github.com/LorenzoLocker12/Android-Mobile-App-for-Recycling-Awareness",
   },
   {
     id: 2,
     name: "Vaccination Awarness Windows App",
     description: "A windows app for vaccination awareness",
-    date: "07-18-2022",
     demoLink: "https://github.com/LorenzoLocker12/Windows-App-for-Vaccination-Awareness",
   },
   {
     id: 3,
     name: "Teach Computer Science to Kids App",
     description: "Mobile app for teaching computer science to kids -- W.I.P",
-    date: "06-25-2023",
     demoLink: "https://github.com/LorenzoLocker12/Teaching-Computer-Science-to-Children-Andoird-APP",
   },
 

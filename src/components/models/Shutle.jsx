@@ -23,7 +23,7 @@ export default function Model(props) {
     <group {...props} dispose={null}
     scale={[0.2, 0.2, 0.2]}
     rotation={[-1,0,0]}
-    position={[0.4, 0, 0]}
+    position={[0, 0, 0]}
     ref={modelRef}
     >
       <mesh
