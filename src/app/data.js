@@ -20,19 +20,19 @@ export const projectsData = [
   {
     id: 1,
     name: "Lixixo App",
-    description: "Mobile app for recycling awareness",
+    description: "Mobile app for recycling awareness -- Created using Android Studio, Java and Googgle Maps API",
     demoLink: "https://github.com/LorenzoLocker12/Android-Mobile-App-for-Recycling-Awareness",
   },
   {
     id: 2,
     name: "Vaccination Awarness Windows App",
-    description: "A windows app for vaccination awareness",
+    description: "A windows app for vaccination awareness -- Created using C# and Windows Forms",
     demoLink: "https://github.com/LorenzoLocker12/Windows-App-for-Vaccination-Awareness",
   },
   {
     id: 3,
     name: "Teach Computer Science to Kids App",
-    description: "Mobile app for teaching computer science to kids -- W.I.P",
+    description: "Mobile app for teaching computer science to kids -- Created using Android Studio, Java and Firebase realtime database",
     demoLink: "https://github.com/LorenzoLocker12/Teaching-Computer-Science-to-Children-Andoird-APP",
   },
   {
