@@ -35,6 +35,12 @@ export const projectsData = [
     description: "Mobile app for teaching computer science to kids -- W.I.P",
     demoLink: "https://github.com/LorenzoLocker12/Teaching-Computer-Science-to-Children-Andoird-APP",
   },
+  {
+    id: 4,
+    name: "My Portifolio",
+    description: "This portifolio -- Created using threeJS, ReactJS, TailwindCSS, and NextsJS",
+    demoLink: "https://lorenzo-locker.vercel.app/",
+  },
 
 ];
 
