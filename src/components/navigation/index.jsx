@@ -57,13 +57,13 @@ const Navigation = () => {
             </motion.div>
           </div>
           ) : (
-          <div className="w-full flex items-center justify-center mt-20">
+          <div className="w-full flex items-center justify-center mt-10">
             <>
             <motion.div
               variants={container}
               initial="hidden"
               animate="show"
-              className="w-full flex items-center justify-center space-x-4"
+              className="w-full flex items-center justify-center space-x-4 mt-20"
             >
               {BtnList.map((btn) => (
                 <NavButton key={btn.label} x={0} y={0} {...btn} />
