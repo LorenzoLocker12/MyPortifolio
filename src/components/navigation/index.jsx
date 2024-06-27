@@ -5,8 +5,7 @@ import NavButton from "./NavButton";
 import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
-import "./custom_index.css";
-document.body.style.overflow = "hidden"
+
 
 
 const container = {
@@ -24,6 +23,7 @@ const Navigation = () => {
   const size = useScreenSize();
   const isLarge = size >= 1024;
   const isMedium = size >= 768;
+  document.body.style.overflow = "hidden";
 
   return (
       <ResponsiveComponent>
@@ -51,13 +51,13 @@ const Navigation = () => {
             </motion.div>
           </div>
           ) : (
-          <div className="w-full flex items-center justify-center mt-50">
+          <div className="w-full flex items-center justify-center mt-20">
             <>
             <motion.div
               variants={container}
               initial="hidden"
               animate="show"
-              className="w-full flex items-center justify-center space-x-4 mt-20"
+              className="w-full flex items-center justify-center space-x-4"
             >
               {BtnList.map((btn) => (
                 <NavButton key={btn.label} x={0} y={0} {...btn} />
