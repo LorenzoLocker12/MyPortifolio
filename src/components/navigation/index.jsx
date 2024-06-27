@@ -5,6 +5,8 @@ import NavButton from "./NavButton";
 import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
+import useScrollBlock from './useScrollBlock';
+
 
 
 
@@ -23,9 +25,10 @@ const Navigation = () => {
   const size = useScreenSize();
   const isLarge = size >= 1024;
   const isMedium = size >= 768;
-  document.body.style.overflow = "hidden";
+  const [blockScroll, allowScroll] = useScrollBlock();
 
   return (
+    blockScroll(),
       <ResponsiveComponent>
         {({ size }) => {
           return size && size >= 480 ? (
