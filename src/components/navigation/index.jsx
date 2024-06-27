@@ -5,6 +5,9 @@ import NavButton from "./NavButton";
 import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
+import "./custom_index.css";
+document.body.style.overflow = "hidden"
+
 
 const container = {
   hidden: { opacity: 0 },
@@ -48,7 +51,7 @@ const Navigation = () => {
             </motion.div>
           </div>
           ) : (
-          <div className="w-full flex items-center justify-center mt-20">
+          <div className="w-full flex items-center justify-center mt-50">
             <>
             <motion.div
               variants={container}
