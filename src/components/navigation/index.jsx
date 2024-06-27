@@ -5,9 +5,8 @@ import NavButton from "./NavButton";
 import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
-import useScrollBlock from './useScrollBlock';
-
-
+import { useScrollBlock } from "./useScrollBlock";
+import { useEffect } from 'react';
 
 
 const container = {
@@ -25,7 +24,11 @@ const Navigation = () => {
   const size = useScreenSize();
   const isLarge = size >= 1024;
   const isMedium = size >= 768;
-  const [blockScroll, allowScroll] = useScrollBlock();
+	const [blockScroll, allowScroll] = useScrollBlock();
+
+  useEffect(() => {
+			blockScroll();
+	}, [blockScroll]);
 
   return (
     blockScroll(),

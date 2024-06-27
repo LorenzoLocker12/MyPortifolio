@@ -1,49 +1,47 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 
-const safeDocument = typeof document !== 'undefined' ? document : {};
+export const useScrollBlock = () => {
+	const scroll = useRef(false);
 
-/**
- * Usage:
- * const [blockScroll, allowScroll] = useScrollBlock();
- */
-export default () => {
-  const scrollBlocked = useRef();
-  const html = safeDocument.documentElement;
-  const { body } = safeDocument;
+	const blockScroll = () => {
+		if (typeof document === "undefined") return;
 
-  const blockScroll = () => {
-    if (!body || !body.style || scrollBlocked.current) return;
+		const html = document.documentElement;
+		const { body } = document;
 
-    const scrollBarWidth = window.innerWidth - html.clientWidth;
-    const bodyPaddingRight =
-      parseInt(window.getComputedStyle(body).getPropertyValue("padding-right")) || 0;
+		if (!body?.style || scroll.current) return;
 
-    /**
-     * 1. Fixes a bug in iOS and desktop Safari whereby setting
-     *    `overflow: hidden` on the html/body does not prevent scrolling.
-     * 2. Fixes a bug in desktop Safari where `overflowY` does not prevent
-     *    scroll if an `overflow-x` style is also applied to the body.
-     */
-    html.style.position = 'relative'; /* [1] */
-    html.style.overflow = 'hidden'; /* [2] */
-    body.style.position = 'relative'; /* [1] */
-    body.style.overflow = 'hidden'; /* [2] */
-    body.style.paddingRight = `${bodyPaddingRight + scrollBarWidth}px`;
+		const scrollBarWidth = window.innerWidth - html.clientWidth;
+		const bodyPaddingRight =
+			parseInt(
+				window.getComputedStyle(body).getPropertyValue("padding-right")
+			) || 0;
 
-    scrollBlocked.current = true;
-  };
+		html.style.position = "relative";
+		body.style.position = "relative";
+		html.style.overflow = "hidden";
+		body.style.overflow = "hidden";
+		body.style.paddingRight = `${bodyPaddingRight + scrollBarWidth}px`;
 
-  const allowScroll = () => {
-    if (!body || !body.style || !scrollBlocked.current) return;
+		scroll.current = true;
+	};
 
-    html.style.position = '';
-    html.style.overflow = '';
-    body.style.position = '';
-    body.style.overflow = '';
-    body.style.paddingRight = '';
+	const allowScroll = () => {
+		if (typeof document === "undefined") return;
 
-    scrollBlocked.current = false;
-  };
+		const html = document.documentElement;
+		const { body } = document;
 
-  return [blockScroll, allowScroll];
+		if (!body?.style || !scroll.current) return;
+
+		html.style.position = "";
+		html.style.overflow = "";
+		body.style.position = "";
+		body.style.overflow = "";
+		body.style.paddingRight = "";
+
+		scroll.current = false;
+	};
+
+	return [blockScroll, allowScroll];
 };
