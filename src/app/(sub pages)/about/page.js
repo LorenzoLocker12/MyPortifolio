@@ -1,7 +1,6 @@
 import Image from "next/image";
 import bg from "../../../../public/background/home-background.jpg";
 import RenderModel from "@/components/RenderModel";
-// import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";
 import dynamic from "next/dynamic";
 const Astronaut = dynamic(() => import("@/components/models/Astronaut"), {

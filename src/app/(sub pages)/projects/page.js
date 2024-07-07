@@ -3,7 +3,6 @@ import bg from "../../../../public/background/home-background.jpg";
 import ProjectList from "@/components/projects";
 import { projectsData } from "../../data";
 import RenderModel from "@/components/RenderModel";
-// import Staff from "@/components/models/Staff";
 import dynamic from "next/dynamic";
 
 const Shutle = dynamic(() => import("@/components/models/Shutle"), {
