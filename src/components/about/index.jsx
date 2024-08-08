@@ -12,10 +12,10 @@ const AboutDetails = () => {
           }
         >
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Software Engineer
+            Data Scientist / ML Engineer
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
-          I am currently in the 6th semester of my Bachelor&apos;s degree in Computer Science. I have hands-on experience in developing Android applications using native Java, as well as creating dynamic and responsive websites with technologies such as React, Express, Next.js, and SpringBoot. My primary programming languages include Java, JavaScript, C#, and Python, which I utilize to build efficient and scalable software solutions. Additionally, I am proficient in working with databases like MongoDB and PostgreSQL, and I have experience using AWS and Docker for cloud computing and containerization. I am passionate about continuously learning and applying new technologies to solve real-world problems.
+          I am currently in the 6th semester of my Bachelor&apos;s degree in Computer Science. In the realm of data science, I am proficient in Python, utilizing libraries such as pandas, NumPy, and scikit-learn for data analysis and machine learning tasks. I have experience working with databases like MongoDB and PostgreSQL, and I am familiar with cloud computing platforms like AWS and containerization tools such as Docker. My passion lies in continuously expanding my skill set and applying advanced technologies to derive insights and solve complex problems.
           </p>
         </ItemLayout>
 
@@ -23,7 +23,7 @@ const AboutDetails = () => {
           className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            Open To Work<sub className="font-semibold text-base"></sub>
+            Working at Zella Sistemas<sub className="font-semibold text-base"></sub>
           </p>
         </ItemLayout>
 
