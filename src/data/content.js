@@ -64,7 +64,7 @@ export const experience = [
       'Built customer value-prediction models that score every new account the instant it is created, streaming signals to media platforms.',
       'Conducted causal and deep-dive descriptive analyses on complex business problems.',
       'Designed B2B segmentation, financial profiling and lead scoring frameworks for commercial and advisory teams.',
-      'Orchestrated deployment with Airflow DAGs and Databricks Jobs, with MLflow lifecycle management and automated drift detection.',
+      'Orchestrated deployment with Airflow DAGs and Databricks Jobs, with MLflown.',
     ],
     tags: ['Python', 'Databricks', 'Airflow', 'MLflow', 'LTV', 'Causal Analysis'],
   },
