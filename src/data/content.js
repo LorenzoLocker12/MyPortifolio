@@ -212,7 +212,7 @@ export const languages = [
   { name: 'Portuguese', level: 'Native', pct: 100 },
   { name: 'English', level: 'Fluent', pct: 90 },
   { name: 'Spanish', level: 'Intermediate', pct: 60 },
-  { name: 'German', level: 'Beginner', pct: 32 },
+  { name: 'German', level: 'Beginner', pct: 30 },
 ];
 
 export const education = [
